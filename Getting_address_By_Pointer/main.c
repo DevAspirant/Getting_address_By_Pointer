@@ -11,8 +11,17 @@
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    printf("Hello, World!\n");
+    // first value
+    int i = 17;
+    int *adressOfI = &i;
+    printf("i stores it,s valur at %p \n",adressOfI);
+    printf("this function start at %p \n",main);
+    printf("the int stored at addressOfI is %d\n",*adressOfI);
+    
+    // secand value
+    *adressOfI = 89;
+    printf("Now is %d \n",i);
+    printf("alloc:%p\n",&i);
     return 0;
 }
 
